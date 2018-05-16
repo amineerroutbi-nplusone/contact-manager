@@ -1,0 +1,14 @@
+{
+  "name": "contact",
+  "version": "1.0.0",
+  "description": "contact",
+  "main": "index.js",
+  "license": "MIT",
+"preferGlobal": true,
+  "bin": "./contact.js",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "inquirer": "^5.2.0",
+    "mongoose": "^5.1.1"
+  }
+}

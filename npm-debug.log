@@ -1,0 +1,77 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.14.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/root/contact-manager',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /root/.npm/contact/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+10 info lifecycle contact@1.0.0~prepublish: contact@1.0.0
+11 silly lifecycle contact@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/root/.npm/contact/1.0.0/package.tgz',
+12 verbose tar pack   '/root/contact-manager' ]
+13 verbose tarball /root/.npm/contact/1.0.0/package.tgz
+14 verbose folder /root/contact-manager
+15 verbose addLocalTarball adding from inside cache /root/.npm/contact/1.0.0/package.tgz
+16 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd contact@1.0.0
+18 verbose afterAdd /root/.npm/contact/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /root/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /root/.npm/contact/1.0.0/package/package.json written
+21 silly publish { name: 'contact',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'contact',
+21 silly publish   main: 'index.js',
+21 silly publish   license: 'MIT',
+21 silly publish   preferGlobal: true,
+21 silly publish   bin: { contact: './contact.js' },
+21 silly publish   dependencies: { commander: '^2.15.1', inquirer: '^5.2.0', mongoose: '^5.1.1' },
+21 silly publish   readme: 'ERROR: No README data found!',
+21 silly publish   _id: 'contact@1.0.0',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '536413f8adbb096144e94bc704f2ebe3fce21e6a',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name contact
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'contact',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'contact',
+26 silly mapToRegistry   name: 'contact',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/contact
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /root/.npm/contact/1.0.0/package.tgz
+30 verbose stack Error: auth required for publishing
+30 verbose stack     at CachingRegistryClient.publish (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+30 verbose stack     at /usr/lib/node_modules/npm/lib/publish.js:138:14
+30 verbose stack     at mapToRegistry (/usr/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+30 verbose stack     at publish_ (/usr/lib/node_modules/npm/lib/publish.js:107:3)
+30 verbose stack     at Array.<anonymous> (/usr/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+30 verbose stack     at LOOP (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+30 verbose stack     at LOOP (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+30 verbose stack     at chain (/usr/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+30 verbose stack     at /usr/lib/node_modules/npm/lib/publish.js:73:5
+30 verbose stack     at RES (/usr/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+31 verbose cwd /root/contact-manager
+32 error Linux 4.4.0-124-generic
+33 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+34 error node v6.14.2
+35 error npm  v3.10.10
+36 error code ENEEDAUTH
+37 error need auth auth required for publishing
+38 error need auth You need to authorize this machine using `npm adduser`
+39 verbose exit [ 1, true ]
